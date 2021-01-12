@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  width: 50%;
+}
+
+h1 {
+  align-self: center;
+  text-align: center;
+}
+
+.input {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+#inputWidth,
+#inputHeight {
+  width: 80px;
+}
+
+#buttonGenerate {
+  height: 28px;
+  border-radius: 10%;
+  transition: all 0.2s;
+}
+#buttonGenerate:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.data-url {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.data-url img {
+  margin-left: 5px;
+  align-self: center;
+}
+.data-url img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.data-url img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.data-url img:focus {
+  transform: scale(1.2);
+}
+
+#inputDataUrl {
+  width: 100%;
+  max-width: 600px;
+}
+
+#imagePreview {
+  width: 100%;
+  position: absolute;
+}

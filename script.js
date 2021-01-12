@@ -2,6 +2,7 @@ const inputWidth = document.getElementById("inputWidth");
 const inputHeight = document.getElementById("inputHeight");
 const inputDataUrl = document.getElementById("inputDataUrl");
 const imagePreview = document.getElementById("imagePreview");
+const titlePreview = document.getElementById("titlePreview");
 
 document.getElementById("buttonGenerate").addEventListener("click", () => {
   const MIN_SIDE_LENGTH = 200;
@@ -14,7 +15,7 @@ document.getElementById("buttonGenerate").addEventListener("click", () => {
     inputHeight.value < MIN_SIDE_LENGTH
   ) {
     alert(
-      `Please enter a valid image size. The minimum length is ${MIN_SIDE_LENGTH}px`
+      `Ops. Tamanho de imagem inválido. O tamanho mínimo é de ${MIN_SIDE_LENGTH}px`
     );
     return;
   }
@@ -28,8 +29,24 @@ document.getElementById("buttonGenerate").addEventListener("click", () => {
   inputDataUrl.value = dataUrl;
   imagePreview.src = dataUrl;
   imagePreview.style.display = "block";
+  titlePreview.style.display = "block";
   imagePreview.style.maxWidth = `${inputWidth.value}px`;
 });
+
+document.getElementById("buttonCopy").addEventListener("click", () => {
+    
+    if (inputDataUrl.value){
+        inputDataUrl.select();
+    inputDataUrl.setSelectionRange(0,99999);
+    
+    document.execCommand('copy')
+
+    alert(`Copiado para a área de transferência!\n\nURL:\n${inputDataUrl.value}`)
+    } else {
+        alert('Gere a imagem para poder copiar para a área de transferência.')
+    }
+});
+
 
 /**
  * Creates a HTML canvas element of the given size.
@@ -50,7 +67,10 @@ function createPlaceholderCanvas(width, height) {
   context.fillRect(0, 0, element.width, element.height);
 
   // Place the text
-  context.font = "bold 90px sans-serif";
+  const lowestDimension = Math.min(Number(inputWidth.value), Number(inputHeight.value))
+  const fontSize = Math.trunc(lowestDimension/4.5)
+
+  context.font = `bold ${fontSize}px sans-serif`;
   context.fillStyle = "#333333";
   context.textAlign = "center";
   context.textBaseline = "middle";

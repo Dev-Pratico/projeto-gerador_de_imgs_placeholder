@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> <img> Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para a imagem: https://icons8.com/icons/set/image -->
+    <link rel="icon" href="assets/image.svg">
 </head>
 <body>
-    <h1>Gerador de imagens</h1>
+    <h1>Gerador de imagens placeholder</h1>
     <h3>Dimensões</h3>
-    <input type="number" class="input" id="inputWidth" value="400">
-    x
-    <input type="number" class="input" id="inputHeight" value="300">
-    <button id="buttonGenerate" type="button">Generate</button>
-
+    <div class="dimensions">
+        <input type="number" class="input" id="inputWidth" value="400">
+        x
+        <input type="number" class="input" id="inputHeight" value="300">
+        <button id="buttonGenerate" type="button" title="Gerar imagem placeholder com dimensões personalizadas.">Gerar</button>
+    </div>
     <h3>Data URL</h3>
-    <input type="text" class="input" id="inputDataUrl" placeholder="Please generate a placeholder image!" readonly>
-
-    <h3>Preview</h3>
-    <h3>Lalala</h3>
+    <div class="data-url">
+        <input type="text" class="input" id="inputDataUrl" placeholder="Gere uma imagem acima para criar uma url!" readonly>
+        <img id="buttonCopy" width="20" height="20" src="assets/copy-link.svg" alt="Copy to clipboard" title="Copiar para Área de Transferência">    
+    </div>
+    
+    <h3 style="display: none" id="titlePreview">Preview</h3>
     <img alt="Preview Image" id="imagePreview" style="display: none">
 <script src="script.js"></script>
 </body>

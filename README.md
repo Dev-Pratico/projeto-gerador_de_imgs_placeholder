@@ -1,0 +1,3 @@
+# Gerador de imagens placeholder
+
+
