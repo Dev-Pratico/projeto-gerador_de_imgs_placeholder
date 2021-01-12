@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+}
+
+.input {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+#inputWidth,
+#inputHeight {
+  width: 100px;
+}
+
+#inputDataUrl {
+  width: 100%;
+  max-width: 600px;
+}
+
+#imagePreview {
+  width: 100%;
+}
