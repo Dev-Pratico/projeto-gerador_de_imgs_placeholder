@@ -4,11 +4,6 @@ body {
   width: 50%;
 }
 
-h1 {
-  align-self: center;
-  text-align: center;
-}
-
 .input {
   height: 30px;
   box-sizing: border-box;
