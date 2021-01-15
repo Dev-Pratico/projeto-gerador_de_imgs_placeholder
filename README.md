@@ -3,9 +3,7 @@
 Um gerador de imagens placeholder construído com Javascript, CSS e HTML.
 Com o input do usuário, é possível selecionar as dimensões de uma imagem (width e height) e, com isso, gerar uma URL no canva para poder utilizar como _src_ nas tags <img> em sites que construímos.
 
-[![Project Demo](assets/imgs_placeholder.GIF)](https://dev-pratico.github.io/projeto-gerador_de_imgs_placeholder/)
-
-<div style="text-align:center"><a href="" target="_blank"><img src="assets/imgs_placeholder.GIF" title="Placeholder images" alt="Project Placeholder Images" /></a></div>
+<div style="text-align:center"><a href="https://dev-pratico.github.io/projeto-gerador_de_imgs_placeholder/" target="_blank"><img height="400" src="assets/imgs_placeholder.GIF" title="Placeholder images" alt="Project Placeholder Images" /></a></div>
 
 
 ## Passo-a-passo
