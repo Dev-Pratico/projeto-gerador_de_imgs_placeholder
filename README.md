@@ -4,7 +4,7 @@ Um gerador de imagens placeholder construído com Javascript, CSS e HTML.
 Com o input do usuário, é possível selecionar as dimensões de uma imagem (width e height) e, com isso, gerar uma URL no canva para poder utilizar como _src_ nas tags <img> em sites que construímos.
 
 <video width="100%" height="auto" controls>
-  <source src="assets/imgs_placeholder.webm" type="video/webm">
+  <source src="assets/imgs_placeholder.mp4" type="video/mp4">
 </video>
 
 ## Passo-a-passo
