@@ -5,6 +5,8 @@ Com o input do usuário, é possível selecionar as dimensões de uma imagem (wi
 
 [![Project Demo](assets/imgs_placeholder.GIF)](https://dev-pratico.github.io/projeto-gerador_de_imgs_placeholder/)
 
+<div style="text-align:center"><a href="" target="_blank"><img src="assets/imgs_placeholder.GIF" title="Placeholder images" alt="Project Placeholder Images" /></a></div>
+
 
 ## Passo-a-passo
 
